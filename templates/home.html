@@ -1,1 +1,17 @@
-<h1>home</h1>
+
+{% block content%}
+ <h1 style="color: aqua;">HOME</h1>
+  <div>
+    {% for ob in obj %}
+    <h2>{{ob.height}}</h2>
+ {% endfor %}
+  </div>
+  <form action="">
+    <label style="color: aqua;" for=""> boyingizni kiriting
+        <input type="" name="" id="">
+    </label>
+    <label style="color: aqua;" for=""> yoshingizni kiriting kiriting
+        <input type="" name="" id="">
+    </label>
+ </form>
+{% endblock%}

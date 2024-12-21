@@ -1,8 +1,10 @@
 from django.shortcuts import render
+from .models import BMI
 
-# Create your views here.
 
 def home_view(request):
+    obj = BMI.objects.all()
+    print('qqwqwqw')
     return render(request, 'home.html', context={
-        
+        obj:'obj'
     })
